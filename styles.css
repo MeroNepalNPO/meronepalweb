@@ -45,16 +45,21 @@ body header hr{
 
 
 
-header{
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 10px;
+}
 
-    margin: 0 auto;
-
-
-    position: sticky;
-    top: 0;
-    background-color: white;
-
-    z-index: 100;
+main {
+  margin-top: 70px;
+}
     
 
 }
@@ -867,7 +872,8 @@ footer form input{
 /* Tablet */
 
 @media (max-width: 768px) {
-
+  header {
+    padding: 5px;
 
     .nav-desktop{
         display: none;
@@ -1098,7 +1104,9 @@ footer form input{
 }
 
 /* Mobile L */
-@media (max-width: 500px){
+@media (max-width: 500px) {
+  header {
+    padding: 2px;
 
 
     .sec-1{
